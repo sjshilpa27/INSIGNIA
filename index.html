@@ -1,0 +1,882 @@
+<!Doctype>
+<html>
+    <head>
+        <title>Insignia</title>
+        <style>
+            .main{
+                width: 960px;
+                height: auto;
+                //background-color: aliceblue;
+            }
+            #sub{
+                
+                width: 600px;
+                height: auto;
+            }
+            
+        </style>
+    </head>
+    
+    <body>
+        <form enctype='application/json' method="post" action="vardump.php">
+          
+            <Section>
+                    <h2>THANA DETAIL</h2>
+                
+                    <div class="main">
+                    <span style="width:700px">
+                      District of Information
+                    </span>
+                    <span style="width:700px">
+                        <input type="text" name='A[0]' placeholder="District">
+                    </span>    
+                    </div> 
+                
+                      <div class="main">
+                    <span>
+                      Thana of Information
+                    </span>
+                    <span>
+                        <input type="text" name='A[1]' placeholder="Thana">
+                    </span>    
+                    </div> 
+                
+                    <div class="main">
+                    <span>
+                      Year of Information
+                    </span>
+                    <span>
+                        <input type="text" name='A[2]' placeholder="Year">
+                    </span>    
+                    </div> 
+                
+                  <div class="main">
+                    <span>
+                      FIR No. of Information
+                    </span>
+                    <span>
+                        <input type="text" name='A[3]' placeholder="FIR No.">
+                    </span>    
+                    </div> 
+                
+            
+            </Section>
+            
+                <Section>
+                    <h2>SECTION DETAIL</h2>
+                
+                    <div class="main">
+                    <span>
+                      IPC
+                    </span>
+                    <span>
+                        <input type="text" name='B[0]' placeholder="IPC">
+                    </span>    
+                    </div> 
+                
+                      <div class="main">
+                    <span>
+                      Minor Act
+                    </span>
+                    <span>
+                        <input type="text" name='B[1]' placeholder="Minor Act">
+                    </span>    
+                    </div> 
+                
+                    <div class="main">
+                    <span>
+                      Similar for more minor Acts
+                    </span>
+                    <span>
+                        <input type="text" name='B[2]' placeholder="Minor Acts">
+                    </span>    
+                    </div> 
+            
+            </Section>
+            
+            
+            <Section>
+                    <h2>EVENT DETAIL</h2>
+                
+                    <div class="main">
+                    <span>
+                      Day of Event
+                    </span>
+                    <span>
+                        <input type="text" name='C[0]' placeholder="Day of Event">
+                    </span>    
+                    </div> 
+                
+                      <div class="main">
+                    <span>
+                      Date of Event
+                    </span>
+                    <span>
+                        <input type="text" name='C[1]' placeholder="Date of Event">
+                    </span>    
+                    </div> 
+                
+                    <div class="main">
+                    <span>
+                      Time of Event
+                    </span>
+                    <span>
+                        <input type="text" name='C[2]' placeholder="Time of Event">
+                    </span>    
+                    </div> 
+                
+                  <div class="main">
+                    <span>
+                      Date of Information at Thana
+                    </span>
+                    <span>
+                        <input type="text" name='C[3]' placeholder="Date of Information at Thana">
+                    </span>    
+                    </div> 
+                
+                 <div class="main">
+                    <span>
+                      Time of Information at Thana
+                    </span>
+                    <span>
+                        <input type="text" name='C[4]' placeholder="Time of Information at Thana">
+                    </span>    
+                    </div> 
+              
+                <div class="main">
+                    <span>
+                      Case Diary No.
+                    </span>
+                    <span>
+                        <input type="text" name='C[5]' placeholder="Case Diary No.">
+                    </span>    
+                    </div> 
+                
+                <div class="main">
+                    <span>
+                    Case Diary time
+                    </span>
+                    <span>
+                        <input type="text" name='C[6]' placeholder="Case Diary time">
+                    </span>    
+                    </div> 
+                
+                <div class="main">
+                    <span>
+                      Type of Information 
+                    </span>
+                    <span>
+                        <input type="text" name='C[7]' placeholder="Type of Information ">
+                    </span>    
+                    </div> 
+                
+            
+            </Section>
+            
+            
+            <Section>
+                    <h2>PLACE OF OCCURANCE DETAIL</h2>
+                
+                    <div class="main">
+                    <span>
+                      Distance from Thana
+                    </span>
+                    <span>
+                        <input type="text" name='D[0]' placeholder="Distance from Thana">
+                    </span>    
+                    </div> 
+                
+                      <div class="main">
+                    <span>
+                      Direction From Thana
+                    </span>
+                    <span>
+                        <input type="text" name='D[1]' placeholder="Direction From Thana">
+                    </span>    
+                    </div> 
+                
+                    <div class="main">
+                    <span>
+                      Name of Occurance Place
+                    </span>
+                    <span>
+                        <input type="text" name='D[2]' placeholder=" Name of Occurance Place">
+                    </span>    
+                    </div> 
+                
+                  <div class="main">
+                    <span>
+                      Thana of Occurance Place
+                    </span>
+                    <span>
+                        <input type="text" name='D[3]' placeholder="Thana of Occurance Place">
+                    </span>    
+                    </div> 
+                
+                 <div class="main">
+                    <span>
+                      District of Occurance Place
+                    </span>
+                    <span>
+                        <input type="text" name='D[4]' plaspanceholder=" District of Occurance Place">
+                    </span>    
+                    </div> 
+              
+                <div class="main">
+                    <span>
+                      State of Occurance Place
+                    </span>
+                    <span>
+                        <input type="text" name='D[5]' placeholder="State of Occurance Place">
+                    </span>    
+                    </div> 
+                
+            </Section>
+            
+            
+            <Section>
+                    <h2>COMPLAINANT DETAIL</h2>
+                
+                    <div class="main">
+                    <span>
+                      First name of the complainant
+                    </span>
+                    <span>
+                        <input type="text" name='E[0]' placeholder="First name of the complainant">
+                    </span>    
+                    </div> 
+                
+                      <div class="main">
+                    <span>
+                      Middle name of the complainant
+                    </span>
+                    <span>
+                        <input type="text" name='E[1]' placeholder=" Middle name of the complainant">
+                    <span>    
+                    </div> 
+                
+                    <div class="main">
+                    <span>
+                      Last name of the complainant
+                    </span>
+                    <span>
+                        <input type="text" name='E[2]' placeholder="Last name of the complainant">
+                    </span>    
+                    </div> 
+                
+                  <div class="main">
+                    <span>
+                      Alias 1 of the Complainant
+                    </span>
+                    <span>
+                        <input type="text" name='E[3]' placeholder="Alias 1 of the Complainant">
+                    </span>    
+                    </div> 
+                
+                 <div class="main">
+                    <span>
+                      Alias 2 of the Complainant
+                    </span>
+                    <span>
+                        <input type="text" name='E[4]' placeholder="Alias 2 of the Complainant">
+                    </span>    
+                    </div> 
+              
+                <div class="main">
+                    <span>
+                      First name of father of the complainant
+                    </span>
+                    <span>
+                        <input type="text" name='E[5]' placeholder="First name of father of the complainant">
+                    </span>    
+                    </div> 
+                
+                
+                <div class="main">
+                    <span>
+                      Middle name of father of the complainant
+                    </span>
+                    <span>
+                        <input type="text" name='E[6]' placeholder="Middle name of father of the complainant">
+                    </span>    
+                    </div> 
+                
+                <div class="main">
+                    <span>
+                    Last name of father of the complainant
+                    </span>
+                    <span>
+                        <input type="text" name='E[7]' placeholder="Last name of father of the complainant">
+                    </span>    
+                    </div> 
+                
+                <div class="main">
+                    <span>
+                       Age of the complainant
+                    </span>
+                    <span>
+                        <input type="text" name='E[8]' placeholder="Age of the complainant">
+                    </span>    
+                    </div> 
+                
+                <div class="main">
+                    <span>
+                       Gender of the complainant
+                    </span>
+                    <span>
+                        <input type="text" name='E[9]' placeholder=" Gender of the complainant">
+                    </span>    
+                    </div> 
+                
+                <div class="main">
+                    <span>
+                       Date of Birth of the complainant
+                    </span>
+                    <span>
+                        <input type="text" name='E[10]' placeholder="Date of Birth of the complainant">
+                    </span>    
+                    </div> 
+                
+                <div class="main">
+                    <span>
+                       Nationality of the complainant
+                    </span>
+                    <span>
+                        <input type="text" name='E[11]' placeholder="Nationality of the complainant">
+                    </span>    
+                    </div> 
+                
+                <div class="main">
+                    <span>
+                       Profession of the complainant
+                    </span>
+                    <span>
+                        <input type="text" name='E[12]' placeholder="Profession of the complainant">
+                    </span>    
+                    </div> 
+                
+                <div class="main">
+                    <span>
+                       Residence or Village of complaint of the complainant
+                    </span>
+                    <span>
+                        <input type="text" name='E[13]' placeholder="Residence or Village of complaint of the complainant">
+                    <span>    
+                    </div> 
+                
+                <div cspanlass="main">
+                    <span>
+                       Thana of the complainant
+                    </span>
+                    <span>
+                        <input type="text" name='E[14]' placeholder="Thana of the complainant">
+                    </span>    
+                    </div> 
+                
+                <div class="main">
+                    <span>
+                     District of the complainant
+                    </span>
+                    <span>
+                        <input type="text" name='E[15]' placeholder="District of the complainant">
+                    </span>    
+                    </div> 
+                
+                <div class="main">
+                    <span>
+                       State of the complainant
+                    </span>
+                    <span>
+                        <input type="text" name='E[16]' placeholder="State of the complainant">
+                    </span>    
+                    </div> 
+                
+                <div class="main">
+                    <span>
+                       Any Delay in giving Information by complainant
+                    </span>
+                    <span>
+                        <input type="text" name='E[17]' placeholder="Any Delay in giving Information by complainant">
+                    </span>    
+                    </div> 
+                
+            
+            </Section>
+            
+         
+            <Section>
+                    <h2>SUSPECT DETAIL</h2>
+                
+                    <div class="main">
+                    <span>
+                      First name of Suspect 
+                    </span>
+                    <span>
+                        <input type="text" name='F[0]' placeholder="First name of Suspect ">
+                    </span>    
+                    </div> 
+                
+                      <div class="main">
+                    <span>
+                      Middle name of the Suspect
+                    </span>
+                    <span>
+                        <input type="text" name='F[1]' placeholder="Middle name of the Suspect">
+                    </span>    
+                    </div> 
+                
+                    <div class="main">
+                    <span>
+                      Last name of the Suspect
+                    </span>
+                    <span>
+                        <input type="text" name='F[2]' placeholder="Last name of the Suspect">
+                    </span>    
+                    </div> 
+                
+                  <div class="main">
+                    <span>
+                      Alias 1 of the Suspect
+                    </span>
+                    <span>
+                        <input type="text" name='F[3]' placeholder="Alias 1 of the Suspect">
+                    </span>    
+                    </div> 
+                
+                 <div class="main">
+                    <span>
+                      Alias 2 of the Suspect
+                    </span>
+                    <span>
+                        <input type="text" name='F[4]' placeholder="Alias 2 of the Suspect">
+                    </span>    
+                    </div> 
+              
+                <div class="main">
+                    <span>
+                      First name of father of the Suspect
+                    </span>
+                    <span>
+                        <input type="text" name='F[5]' placeholder="First name of father of the Suspect">
+                    </span>    
+                    </div> 
+                
+                
+                <div class="main">
+                    <span>
+                      Middle name of father of the Suspect
+                    </span>
+                    <span>
+                        <input type="text" name='F[6]' placeholder="Middle name of father of the Suspect">
+                    </span>    
+                    </div> 
+                
+                <div class="main">
+                    <span>
+                    Last name of father of the Suspect
+                    </span>
+                    <span>
+                        <input type="text" name='F[7]' placeholder="Last name of father of the Suspect">
+                    </span>    
+                    </div> 
+                
+                <div class="main">
+                    <span>
+                       Age of the Suspect
+                    </span>
+                    <span>
+                        <input type="text" name='F[8]' placeholder="Age of the Suspect">
+                    </span>    
+                    </div> 
+                
+                <div class="main">
+                    <span>
+                       Gender of the Suspect
+                    </span>
+                    <span>
+                        <input type="text" name='F[9]' placeholder="Gender of the Suspect">
+                    </span>    
+                    </div> 
+                
+                <div class="main">
+                    <span>
+                       Residence or Village of Suspect
+                    </span>
+                    <span>
+                        <input type="text" name='F[10]' placeholder="Residence or Village of Suspect">
+                    </span>    
+                 </div> 
+                
+                <div class="main">
+                    <span>
+                       Thana of the Suspect
+                    </span>
+                    <span>
+                        <input type="text" name='F[11]' placeholder=" Thana of the Suspect">
+                    </span>    
+                    </div> 
+                
+                <div class="main">
+                    <span>
+                     District of the Suspect
+                    </span>
+                    <span>
+                        <input type="text" name='F[12]' placeholder=" District of the Suspect">
+                    </span>    
+                    </div> 
+                
+                <div class="main">
+                    <span>
+                       State of the Suspect
+                    </span>
+                    <span>
+                        <input type="text" name='F[13]' placeholder="State of the Suspect">
+                    </span>    
+                    </div> 
+                                
+            
+            </Section>
+            
+            <Section>
+                    <h2>PROPERTY DETAIL</h2>
+                
+                    <div class="main">
+                    <span>
+                     List of Property Lost
+                    </span>
+                    <span>
+                        <input type="text" name='G[0]' placeholder=" List of Property Lost">
+                    </span>    
+                    </div> 
+                
+                      <div class="main">
+                    <span>
+                      List of Property Lost
+                    </span>
+                    <span>
+                        <input type="text" name='G[1]' placeholder=" List of Property Lost">
+                    </span>    
+                    </div> 
+                
+                    <div class="main">
+                    <span>
+                      Type of Modus Operandi
+                    </span>
+                    <span>
+                        <input type="text" name='G[2]' placeholder="Type of Modus Operandi">
+                    </span>    
+                    </div> 
+                
+            </Section>
+            
+                <Section>
+                    <h2>INQUEST DETAIL</h2>
+                
+                    <div class="main">
+                    <span>
+                     Inquest No.
+                    </span>
+                    <span>
+                        <input type="text" name='H[0]' placeholder="Inquest No.">
+                    </span>    
+                    </div> 
+                
+                      <div class="main">
+                    <span>
+                      Inquest Date
+                    </span>
+                    <span>
+                        <input type="text" name='H[1]' placeholder="Inquest Date">
+                    </span>    
+                    </div> 
+                
+                    <div class="main">
+                    <span>
+                      Inquest Time
+                    </span>
+                    <span>
+                        <input type="text" name='H[2]' placeholder="Inquest Time">
+                    </span>    
+                    </div> 
+            
+                    
+                    <div class="main">
+                    <span>
+                      Inquest Summary
+                    </span>
+                    <span>
+                        <input type="text" name='H[2]' placeholder="Inquest Summary">
+                    </span>    
+                    </div> 
+            </Section>
+            
+            <Section>
+                    <h2>FIRST IMPORTANT REPORT SUMMARY</h2>
+                
+                    <div class="main">
+                    <span>
+                       
+                        <input type="file" name='I[0]' >
+                    </span>    
+                    </div> 
+            </Section>
+            
+            <Section>
+                    <h2>ACCUSE DETAIL</h2>
+                
+                    <div class="main">
+                    <span>
+                      First name of Accuse 
+                    </span>
+                    <span>
+                        <input type="text" name='J[0]' placeholder="First name of Accuse ">
+                    </span>    
+                    </div> 
+                
+                      <div class="main">
+                    <span>
+                      Middle name of the Accuse
+                    </span>
+                    <span>
+                        <input type="text" name='J[1]' placeholder="Middle name of the Accuse">
+                    </span>    
+                    </div> 
+                
+                    <div class="main">
+                    <span>
+                      Last name of the Accuse
+                    </span>
+                    <span>
+                        <input type="text" name='J[2]' placeholder="Last name of the Accuse">
+                    </span>    
+                    </div> 
+                
+                <div class="main">
+                    <span>
+                       Age of the Accuse
+                    </span>
+                    <span>
+                        <input type="text" name='J[3]' placeholder="Age of the Accuse">
+                    </span>    
+                    </div> 
+                
+                <div class="main">
+                    <span>
+                       Gender of the Accuse
+                    </span>
+                    <span>
+                        <input type="text" name='J[4]' placeholder="Gender of the Accuse">
+                    </span>    
+                    </div> 
+                
+                  <div class="main">
+                    <span>
+                      Alias 1 of the Accuse
+                    </span>
+                    <span>
+                        <input type="text" name='J[5]' placeholder=" Alias 1 of the Accuse">
+                    </span>    
+                    </div> 
+                
+                 <div class="main">
+                    <span>
+                       Alias 1 of the Accuse
+                    </span>
+                    <span>
+                        <input type="text" name='J[6]' placeholder="  Alias 1 of the Accuse">
+                    </span>    
+                    </div> 
+              
+                <div class="main">
+                    <span>
+                      First name of father of the Accuse
+                    </span>
+                    <span>
+                        <input type="text" name='J[7]' placeholder="First name of father of the Accuse">
+                    </span>    
+                    </div> 
+                
+                
+                <div class="main">
+                    <span>
+                      Middle name of father of the Accuse
+                    </span>
+                    <span>
+                        <input type="text" name='J[8]' placeholder="Middle name of father of the Accuse">
+                    </span>    
+                    </div> 
+                
+                <div class="main">
+                    <span>
+                    Last name of father of the Accuse
+                    </span>
+                    <span>
+                        <input type="text" name='J[9]' placeholder="Last name of father of the Accuse">
+                    </span>    
+                    </div> 
+                
+                
+                <div class="main">
+                    <span>
+                       Residence or Village of Accuse
+                    </span>
+                    <span>
+                        <input type="text" name='J[10]' placeholder="Residence or Village of Accuse">
+                    </span>    
+                    </div> 
+                
+                <div class="main">
+                    <span>
+                       Thana of the Accuse
+                    </span>
+                    <span>
+                        <input type="text" name='J[11]' placeholder="Thana of the Accuse">
+                    </span>    
+                    </div> 
+                
+                <div class="main">
+                    <span>
+                     District of the Accuse
+                    </span>
+                    <span>
+                        <input type="text" name='J[12]' placeholder="District of the Accuse">
+                    </span>    
+                    </div> 
+                
+                <div class="main">
+                    <span>
+                       State of the Accuse
+                    </span>
+                    <span>
+                        <input type="text" name='J[13]' placeholder="State of the Accuse">
+                    </span>    
+                    </div> 
+                                
+            <div class="main">
+                    <span>
+                       Photo of the Accuse
+                    </span>
+                    <span>
+                        <input type="text" name='J[14]' placeholder="Photo of the Accuse">
+                    </span>    
+                    </div> 
+                                
+                <div class="main">
+                    <span>
+                       Finger Print of the Accuse
+                    </span>
+                    <span>
+                        <input type="text" name='J[15]' placeholder=" Finger Print of the Accuse">
+                    </span>    
+                    </div> 
+                                
+            
+            
+            </Section>
+            
+            <Section>
+                    <h2>RECOVERY DETAIL</h2>
+                
+                    <div class="main">
+                    <span>
+                      List of Recovered Property
+                    </span>
+                    <span>
+                        <input type="text" name='K[0]' placeholder="List of Recovered Property">
+                    </span>    
+                    </div> 
+                
+                      <div class="main">
+                    <span>
+                      Value of Recovered Property
+                    </span>
+                    <span>
+                        <input type="text" name='K[1]' placeholder="Value of Recovered Property">
+                    </span>    
+                    </div> 
+                
+            </Section>
+            
+            <Section>
+                    <h2>INVESTIGATION DETAIL</h2>
+                
+                    <div class="main">
+                    <span>
+                      Name of the Investigation Officer 
+                    </span>
+                    <span>
+                        <input type="text" name='L[0]' placeholder="Name of the Investigation Officer ">
+                    </span>    
+                    </div> 
+                
+                
+            
+            </Section>
+            
+            
+            <Section>
+                    <h2>COMPLETION DETAIL</h2>
+                
+                    <div class="main">
+                    <span>
+                      Final Report
+                    </span>
+                    <span>
+                        <input type="text" name='M[0]' placeholder="Final Report">
+                    </span>    
+                    </div> 
+                
+                      <div class="main">
+                    <span>
+                      Final Report No.
+                    </span>
+                    <span>
+                        <input type="text" name='M[1]' placeholder="Final Report No.">
+                    </span>    
+                    </div> 
+                
+                
+                      <div class="main">
+                    <span>
+                      Final Report Date
+                    </span>
+                    <span>
+                        <input type="date" name='M[2]' placeholder="Final Report Date">
+                    </span>    
+                    </div> 
+                
+            </Section>
+            
+            
+            
+            <Section>
+                    <h2>COURT DETAIL</h2>
+                
+                    <div class="main">
+                    <span>
+                      Date of Admission in Court
+                    </span>
+                    <span>
+                        <input type="text" name='N[0]' placeholder=" Date of Admission in Court">
+                    </span>    
+                    </div> 
+                
+                      <div class="main">
+                    <span>
+                      No. of Admission in Court
+                    </span>
+                    <span>
+                        <input type="text" name='M[1]' placeholder="No. of Admission in Court">
+                    </span>    
+                    </div>
+            </Section>
+            
+            <section>
+                    <div>
+                    <input type="button" value="submit" name="submit">
+                    </div>            
+            </section>
+            
+        </form>
+    </body>
+</html>
